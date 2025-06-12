@@ -1,6 +1,7 @@
 {
   "timeline": "Timeline",
   "albums": "Albums",
+  "profile": "Profile",
   "library": {
     "library": "Library",
     "map": "Map",
@@ -12,6 +13,17 @@
     "network": "Network",
     "advanced": "Advanced"
   },
-  "profile": "Profile",
+  "permission_gate": {
+    "permissions": "Permissions",
+    "explanation": "Photoseed needs access to your photos and videos to display the gallery, allow file import, and create backups. Please grant the permissions.",
+    "retry": "Try again",
+    "denied_message": "Permissions are still not granted. You must allow them to use the app.",
+    "permanently_denied_message": "Permissions have been permanently denied. To continue, you must enable them in the app settings. You may need to restart the app after changing settings.",
+    "open_settings": "Open settings",
+    "error_checking": "Error checking permissions",
+    "error_requesting": "Error requesting permissions",
+    "error_opening_settings": "Error opening settings",
+    "generic_error": "An error occurred while requesting permissions"
+  },
   "feature_not_available": "Feature not available"
 }
