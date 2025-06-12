@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:meshgallery/config/globals.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:meshgallery/utils/toast_util.dart';
 
 import 'package:meshgallery/pages/profile.dart';
@@ -12,6 +15,13 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future<void> launchUrlInApp(String url) async {
+      final Uri uri = Uri.parse(url);
+      if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+        throw Exception('Could not launch $url');
+      }
+    }
+
     return AppBar(
       leading: IconButton(
         icon: Icon(
@@ -23,10 +33,18 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         },
       ),
 
-      title: Text(
-        title.toUpperCase(),
-        style: const TextStyle(fontWeight: FontWeight.bold),
+      title: GestureDetector(
+        onLongPress: () {
+          if (title == "timeline".tr()) {
+            launchUrlInApp(appRepo);
+          }
+        },
+        child: Text(
+          title.toUpperCase(),
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
+
       backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
       centerTitle: true,
       actions: [

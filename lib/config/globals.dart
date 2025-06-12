@@ -1,3 +1,5 @@
 import 'package:flutter/material.dart';
 
-const supportedLocales = [Locale('en'), Locale('pl')];
+final supportedLocales = [Locale('en'), Locale('pl')];
+
+final String appRepo = 'https://github.com/Magic-Forces/meshgallery';
