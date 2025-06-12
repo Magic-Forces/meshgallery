@@ -16,6 +16,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:meshgallery/config/globals.dart';
 import 'package:meshgallery/theme/theme.dart';
 
 import 'package:meshgallery/homepage.dart';
@@ -26,7 +27,7 @@ void main() async {
 
   runApp(
     EasyLocalization(
-      supportedLocales: [Locale('en'), Locale('pl')],
+      supportedLocales: supportedLocales,
       path: 'assets/translations',
       fallbackLocale: Locale('en'),
       useFallbackTranslations: true,
