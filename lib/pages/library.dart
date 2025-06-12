@@ -4,7 +4,7 @@ import 'package:meshgallery/utils/toast_util.dart';
 import 'package:meshgallery/widgets/app_bar.dart';
 import 'package:meshgallery/widgets/custom_button.dart';
 
-import 'package:meshgallery/pages/settings.dart';
+import 'package:meshgallery/pages/settings/settings.dart';
 
 class Library extends StatelessWidget {
   const Library({super.key});
@@ -48,7 +48,7 @@ class Library extends StatelessWidget {
               );
             },
             icon: Icons.settings,
-            text: "settings".tr(),
+            text: "settings.settings".tr(),
           ),
         ],
       ),

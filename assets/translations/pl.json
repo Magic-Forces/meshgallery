@@ -2,7 +2,12 @@
   "timeline": "Oś czasu",
   "albums": "Albumy",
   "library": "Biblioteka",
-  "settings": "Ustawienia",
+  "settings": {
+    "settings": "Ustawienia",
+    "appearance": "Wygląd",
+    "network": "Sieć",
+    "advanced": "Zawansowane"
+  },
   "trash": "Kosz",
   "feature_not_available": "Funkcja niedostępna"
 }

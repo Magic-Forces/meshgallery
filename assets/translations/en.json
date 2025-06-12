@@ -2,7 +2,12 @@
   "timeline": "Timeline",
   "albums": "Albums",
   "library": "Library",
-  "settings": "Settings",
+  "settings": {
+    "settings": "Settings",
+    "appearance": "Appearance",
+    "network": "Network",
+    "advanced": "Advanced"
+  },
   "trash": "Trash",
   "feature_not_available": "Feature not available"
 }
