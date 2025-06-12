@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+
 import 'package:meshgallery/pages/timeline.dart';
 import 'package:meshgallery/pages/albums.dart';
 import 'package:meshgallery/pages/library.dart';
@@ -20,17 +22,17 @@ class _HomePageState extends State<HomePage> {
     NavigationDestination(
       icon: const Icon(Icons.photo_outlined),
       selectedIcon: const Icon(Icons.photo),
-      label: "Timeline",
+      label: "timeline".tr(),
     ),
     NavigationDestination(
       icon: const Icon(Icons.photo_album_outlined),
       selectedIcon: const Icon(Icons.photo_album),
-      label: "Albums",
+      label: "albums".tr(),
     ),
     NavigationDestination(
       icon: const Icon(Icons.auto_awesome_mosaic_outlined),
       selectedIcon: const Icon(Icons.auto_awesome_mosaic),
-      label: "Library",
+      label: "library".tr(),
     ),
   ];
 

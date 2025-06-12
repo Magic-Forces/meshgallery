@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -8,13 +9,13 @@ class Settings extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Settings",
+          "settings".tr().toUpperCase(),
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
         centerTitle: true,
       ),
-      body: Center(child: Text('Settings')),
+      body: Center(child: Text('settings'.tr())),
     );
   }
 }

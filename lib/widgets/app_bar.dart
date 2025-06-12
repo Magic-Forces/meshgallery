@@ -11,7 +11,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+      title: Text(
+        title.toUpperCase(),
+        style: const TextStyle(fontWeight: FontWeight.bold),
+      ),
       backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
       centerTitle: true,
       actions: [
