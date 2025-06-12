@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-
+import 'package:meshgallery/utils/toast_util.dart';
 import 'package:meshgallery/widgets/app_bar.dart';
+import 'package:meshgallery/widgets/custom_button.dart';
+
+import 'package:meshgallery/pages/settings.dart';
 
 class Library extends StatelessWidget {
   const Library({super.key});
@@ -10,7 +13,45 @@ class Library extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(title: "library".tr()),
-      body: Center(child: Text('library'.tr())),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          GestureDetector(
+            onTap: () {
+              ToastUtil.showFeatureNotAvailableToast(context);
+            },
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Image.asset(
+                'assets/images/globe.png',
+                height: 200,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          CustomButton(
+            onTap: () {
+              ToastUtil.showFeatureNotAvailableToast(context);
+            },
+            icon: Icons.delete,
+            text: "trash".tr(),
+            iconBackgroundColor: Colors.red,
+            iconColor: Colors.white,
+          ),
+          const SizedBox(height: 12),
+          CustomButton(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Settings()),
+              );
+            },
+            icon: Icons.settings,
+            text: "settings".tr(),
+          ),
+        ],
+      ),
     );
   }
 }

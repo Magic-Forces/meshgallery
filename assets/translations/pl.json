@@ -1,6 +1,8 @@
 {
-  "timeline": "oś czasu",
-  "albums": "albumy",
-  "library": "biblioteka",
-  "settings": "ustawienia"
+  "timeline": "Oś czasu",
+  "albums": "Albumy",
+  "library": "Biblioteka",
+  "settings": "Ustawienia",
+  "trash": "Kosz",
+  "feature_not_available": "Funkcja niedostępna"
 }

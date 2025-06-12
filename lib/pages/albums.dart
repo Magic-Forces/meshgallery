@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:meshgallery/utils/toast_util.dart';
 
 import 'package:meshgallery/widgets/app_bar.dart';
 
@@ -11,7 +12,9 @@ class Albums extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(title: "albums".tr()),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          ToastUtil.showFeatureNotAvailableToast(context);
+        },
         child: const Icon(Icons.add),
       ),
       body: Center(child: Text('albums'.tr())),

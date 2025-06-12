@@ -1,6 +1,8 @@
 {
-  "timeline": "timeline",
-  "albums": "albums",
-  "library": "library",
-  "settings": "settings"
+  "timeline": "Timeline",
+  "albums": "Albums",
+  "library": "Library",
+  "settings": "Settings",
+  "trash": "Trash",
+  "feature_not_available": "Feature not available"
 }

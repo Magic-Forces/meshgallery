@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meshgallery/pages/settings.dart';
+import 'package:meshgallery/utils/toast_util.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -11,6 +11,16 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: IconButton(
+        icon: Icon(
+          Icons.search_outlined,
+          color: Theme.of(context).colorScheme.primary,
+        ),
+        onPressed: () {
+          ToastUtil.showFeatureNotAvailableToast(context);
+        },
+      ),
+
       title: Text(
         title.toUpperCase(),
         style: const TextStyle(fontWeight: FontWeight.bold),
@@ -20,14 +30,11 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           icon: Icon(
-            Icons.settings,
+            Icons.person_outline,
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const Settings()),
-            );
+            ToastUtil.showFeatureNotAvailableToast(context);
           },
         ),
       ],
