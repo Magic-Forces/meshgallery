@@ -1,13 +1,17 @@
 {
   "timeline": "Timeline",
   "albums": "Albums",
-  "library": "Library",
+  "library": {
+    "library": "Library",
+    "map": "Map",
+    "trash": "Trash"
+  },
   "settings": {
     "settings": "Settings",
     "appearance": "Appearance",
     "network": "Network",
     "advanced": "Advanced"
   },
-  "trash": "Trash",
+  "profile": "Profile",
   "feature_not_available": "Feature not available"
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meshgallery/utils/toast_util.dart';
 
+import 'package:meshgallery/pages/profile.dart';
+
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   const MyAppBar({super.key, this.title = 'Meshgallery'});
@@ -34,7 +36,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            ToastUtil.showFeatureNotAvailableToast(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Profile()),
+            );
           },
         ),
       ],

@@ -1,5 +1,5 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class SettingsAdvanced extends StatelessWidget {
   const SettingsAdvanced({super.key});

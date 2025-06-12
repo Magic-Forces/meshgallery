@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 
 import 'package:meshgallery/pages/timeline.dart';
 import 'package:meshgallery/pages/albums.dart';
-import 'package:meshgallery/pages/library.dart';
+import 'package:meshgallery/pages/library/library.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     NavigationDestination(
       icon: const Icon(Icons.auto_awesome_mosaic_outlined),
       selectedIcon: const Icon(Icons.auto_awesome_mosaic),
-      label: "library".tr(),
+      label: "library.library".tr(),
     ),
   ];
 

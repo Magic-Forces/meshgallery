@@ -1,13 +1,17 @@
 {
   "timeline": "Oś czasu",
   "albums": "Albumy",
-  "library": "Biblioteka",
+  "library": {
+    "library": "Biblioteka",
+    "map": "Mapa",
+    "trash": "Kosz"
+  },
   "settings": {
     "settings": "Ustawienia",
     "appearance": "Wygląd",
     "network": "Sieć",
     "advanced": "Zawansowane"
   },
-  "trash": "Kosz",
+  "profile": "Profil",
   "feature_not_available": "Funkcja niedostępna"
 }

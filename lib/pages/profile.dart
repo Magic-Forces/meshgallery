@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
-class SettingsNetwork extends StatelessWidget {
-  const SettingsNetwork({super.key});
+class Profile extends StatelessWidget {
+  const Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "settings.network".tr().toUpperCase(),
+          "profile".tr().toUpperCase(),
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
         centerTitle: true,
       ),
-      body: Center(child: Text('settings.network'.tr())),
+      body: Center(child: Text('profile'.tr())),
     );
   }
 }
