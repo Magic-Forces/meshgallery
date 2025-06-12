@@ -15,6 +15,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'package:flutter/material.dart';
+import 'package:meshgallery/theme/theme.dart';
+import 'package:meshgallery/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +27,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'MeshGallery', home: const Scaffold());
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      home: const HomePage(),
+    );
   }
 }
