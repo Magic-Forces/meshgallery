@@ -8,7 +8,7 @@ import 'package:meshgallery/pages/profile.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-  const MyAppBar({super.key, this.title = 'Meshgallery'});
+  const MyAppBar({super.key, this.title = 'MeshGallery'});
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -61,6 +61,27 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           },
         ),
       ],
+    );
+  }
+}
+
+class SimpleAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  const SimpleAppBar({super.key, this.title = 'MeshGallery'});
+
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      title: Text(
+        title.toUpperCase(),
+        style: const TextStyle(fontWeight: FontWeight.bold),
+      ),
+      iconTheme: IconThemeData(color: Theme.of(context).colorScheme.primary),
+      backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
+      centerTitle: true,
     );
   }
 }

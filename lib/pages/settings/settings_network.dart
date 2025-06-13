@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:meshgallery/widgets/app_bar.dart';
 
 class SettingsNetwork extends StatelessWidget {
   const SettingsNetwork({super.key});
@@ -7,14 +8,7 @@ class SettingsNetwork extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "settings.network".tr().toUpperCase(),
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
-        centerTitle: true,
-      ),
+      appBar: SimpleAppBar(title: 'settings.network'.tr()),
       body: Center(child: Text('settings.network'.tr())),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:meshgallery/widgets/app_bar.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -7,14 +8,7 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "profile".tr().toUpperCase(),
-          style: const TextStyle(fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Theme.of(context).colorScheme.surfaceContainer,
-        centerTitle: true,
-      ),
+      appBar: SimpleAppBar(title: 'profile'.tr()),
       body: Center(child: Text('profile'.tr())),
     );
   }
