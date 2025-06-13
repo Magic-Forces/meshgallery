@@ -58,17 +58,14 @@ class _TimelineState extends State<Timeline> {
                   ),
                 );
               },
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: FadeInImage(
-                  placeholder: MemoryImage(kTransparentImage),
-                  image: ThumbnailProvider(
-                    mediumId: medium.id,
-                    mediumType: medium.mediumType,
-                    highQuality: true,
-                  ),
-                  fit: BoxFit.cover,
+              child: FadeInImage(
+                placeholder: MemoryImage(kTransparentImage),
+                image: ThumbnailProvider(
+                  mediumId: medium.id,
+                  mediumType: medium.mediumType,
+                  highQuality: true,
                 ),
+                fit: BoxFit.cover,
               ),
             );
           },

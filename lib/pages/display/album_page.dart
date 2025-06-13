@@ -56,20 +56,17 @@ class _AlbumPageState extends State<AlbumPage> {
                       ),
                     );
                   },
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: SizedBox(
-                      width: imageSize,
-                      height: imageSize,
-                      child: FadeInImage(
-                        placeholder: MemoryImage(kTransparentImage),
-                        image: ThumbnailProvider(
-                          mediumId: medium.id,
-                          mediumType: medium.mediumType,
-                          highQuality: true,
-                        ),
-                        fit: BoxFit.cover,
+                  child: SizedBox(
+                    width: imageSize,
+                    height: imageSize,
+                    child: FadeInImage(
+                      placeholder: MemoryImage(kTransparentImage),
+                      image: ThumbnailProvider(
+                        mediumId: medium.id,
+                        mediumType: medium.mediumType,
+                        highQuality: true,
                       ),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
